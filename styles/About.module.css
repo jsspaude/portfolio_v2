@@ -1,8 +1,11 @@
 .about {
-  padding-top: 1rem;
-  font-size: 0.9em;
-  margin-top: 2rem;
+  padding-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.about h3 {
+  color: #70798c;
+  text-transform: uppercase;
 }
 
 .boxes {

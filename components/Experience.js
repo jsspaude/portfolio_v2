@@ -1,4 +1,4 @@
-import styles from "../styles/Experience.module.css";
+import styles from '../styles/Experience.module.css';
 
 export default function Experience() {
   return (
@@ -7,16 +7,35 @@ export default function Experience() {
       <img src="/assets/svg/line.svg" className="line" />
       <div className={styles.lineContainer}>
         <div className={styles.line}>
-          <i class="bi bi-briefcase"></i>
+          <i className="bi bi-briefcase"></i>
           <div>
             <div className={styles.college}>
-              <a href="https://redmonark.com/" target="_blank" rel="noreferrer">
-                Redmonark Technologies LLP
+              <a
+                href="https://colonydigital.ca/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Colony Digital
               </a>
             </div>
-            <div className={styles.branch}>
-              Co-Founder and Full-stack developer (March 2018- January 2021)
+            <div className={styles.branch}>Full Stack Web Developer</div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.lineContainer}>
+        <div className={styles.line}>
+          <i className="bi bi-briefcase"></i>
+          <div>
+            <div className={styles.college}>
+              <a
+                href="https://vancouverwebsites.ca/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Vancouver Websites
+              </a>
             </div>
+            <div className={styles.branch}>Web Developer</div>
           </div>
         </div>
       </div>

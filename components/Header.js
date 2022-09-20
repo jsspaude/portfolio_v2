@@ -1,20 +1,16 @@
-import styles from "../styles/Header.module.css";
+import styles from '../styles/Header.module.scss';
+import Skyline from './SVG/Skyline';
 
 export default function Header() {
   return (
-    <main className={styles.header}>
-      <img src="/assets/images/syamlal.jpg" className={styles.dp} />
-
-      <h1 className={styles.name}>Syamlal CM</h1>
-
-      <p className={styles.about}>
-        Software Engineer & Internet Entrepreneur,
-        <br />
-        Founder & CEO at{" "}
-        <a href="https://floyet.com" target="_blank" rel="noreferrer">
-          Floyet Technologies
-        </a>
-      </p>
-    </main>
+    <header className={styles.header}>
+      <div className={styles.top}>
+        <h2>jesspaude.ca</h2>
+        <div className={styles.subhead}>
+          <p>Full Stack</p>
+          <p>Web Development</p>
+        </div>
+      </div>
+    </header>
   );
 }

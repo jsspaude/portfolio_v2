@@ -1,5 +1,5 @@
 .container {
-  padding: 0 0.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,16 +7,12 @@
 }
 
 .card {
-  text-align: center;
-  box-shadow: 0 2px 5px 0 #dfdfdf, 0 8px 40px 0 rgb(10 14 29 / 6%);
   border: none;
-  margin-top: 20vh;
   width: 100%;
   height: auto;
-  max-width: 50vw;
-  padding: 2rem;
   padding-bottom: 0;
   margin-bottom: 5rem;
+  background-color: #fff;
 }
 
 .footer {
@@ -49,23 +45,4 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
-
-@media (max-width: 1200px) {
-  .card {
-    max-width: 67vw;
-  }
-}
-
-@media (max-width: 1000px) {
-  .card {
-    max-width: 72vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .card {
-    max-width: 90vw;
-    padding: 0.5rem;
-  }
 }

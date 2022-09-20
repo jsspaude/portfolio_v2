@@ -1,0 +1,43 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif !important;
+  background-color: #fff;
+}
+
+a {
+  color: #e85a4f;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+a span {
+  color: #70798c;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: #70798c;
+}
+
+p {
+  color: #252323;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-family: 'Open Sans', sans-serif !important;
+  margin: 0;
+}
+
+.line {
+  margin-bottom: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}

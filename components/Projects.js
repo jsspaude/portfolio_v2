@@ -1,10 +1,10 @@
-import { Card, Col, Row } from "react-bootstrap";
-import styles from "../styles/Works.module.css";
+import { Card, Col, Row } from 'react-bootstrap';
+import styles from '../styles/Projects.module.css';
 
-export default function Works() {
+export default function Projects() {
   return (
-    <div className={styles.works}>
-      <h2>Works</h2>
+    <div className={styles.projects}>
+      <h2>Projects</h2>
       <img src="/assets/svg/line.svg" className="line" />
       <Row>
         <Col md={6}>
@@ -12,7 +12,7 @@ export default function Works() {
             <a href="https://codedesign.app" target="_blank" rel="noreferrer">
               <Card.Img
                 variant="top"
-                src="/assets/images/works/codedesign.png"
+                src="/assets/images/projects/codedesign.png"
               />
               <Card.Body>
                 <Card.Title className={styles.title}>Codedesign.app</Card.Title>
@@ -36,7 +36,7 @@ export default function Works() {
             <a href="https://kuty.me" target="_blank" rel="noreferrer">
               <Card.Img
                 variant="top"
-                src="/assets/images/works/techomoro.png"
+                src="/assets/images/projects/techomoro.png"
               />
               <Card.Body>
                 <Card.Title className={styles.title}>Techomoro.com</Card.Title>
@@ -61,7 +61,7 @@ export default function Works() {
             >
               <Card.Img
                 variant="top"
-                src="/assets/images/works/parambathapp.png"
+                src="/assets/images/projects/parambathapp.png"
               />
               <Card.Body>
                 <Card.Title className={styles.title}>Parambath App</Card.Title>
@@ -84,7 +84,7 @@ export default function Works() {
         <Col md={6}>
           <Card className={styles.card}>
             <a href="https://kuty.me" target="_blank" rel="noreferrer">
-              <Card.Img variant="top" src="/assets/images/works/kuty.png" />
+              <Card.Img variant="top" src="/assets/images/projects/kuty.png" />
               <Card.Body>
                 <Card.Title className={styles.title}>Kuty.me</Card.Title>
                 <p className={styles.category}>URL Shortener</p>
@@ -109,7 +109,7 @@ export default function Works() {
             <a href="https://youngmenu.com" target="_blank" rel="noreferrer">
               <Card.Img
                 variant="top"
-                src="/assets/images/works/youngmenu.png"
+                src="/assets/images/projects/youngmenu.png"
               />
               <Card.Body>
                 <Card.Title className={styles.title}>YoungMenu.com</Card.Title>

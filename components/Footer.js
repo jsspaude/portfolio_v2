@@ -1,4 +1,4 @@
-import styles from "../styles/Footer.module.css";
+import styles from '../styles/Footer.module.css';
 
 export default function Footer() {
   return (
@@ -8,22 +8,25 @@ export default function Footer() {
           <ul className="list-inline">
             <li className="list-inline-item">
               <a
-                href="https://www.linkedin.com/in/syamjayaraj"
+                href="mailto:jsspaude@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-sm btn-default btn-lg"
               >
-                <i class="bi bi-linkedin"></i>
+                <img src="/assets/svg/email.svg" alt="An SVG of an @ symbol" />
               </a>
             </li>
             <li className="list-inline-item">
               <a
-                href="https://twitter.com/syamjayaraj"
+                href=""
                 target="_blank"
                 rel="noreferrer"
                 className="btn-sm btn-default btn-lg"
               >
-                <i class="bi bi-twitter"></i>
+                <img
+                  src="/assets/svg/linkedin.svg"
+                  alt="An SVG of the linkedin symbol"
+                />
               </a>
             </li>
             <li className="list-inline-item">
@@ -33,18 +36,17 @@ export default function Footer() {
                 rel="noreferrer"
                 className="btn-sm btn-default btn-lg"
               >
-                <i class="bi bi-github"></i>
+                <img
+                  src="/assets/svg/github.svg"
+                  alt="An SVG of the github symbol"
+                />
               </a>
             </li>
           </ul>
         </div>
         <div className="copyright">
-          <p className="top">
-            Made with Love in God's own country | Powered by&nbsp;
-            <a href="https://floyet.com">Floyet</a>
-          </p>
           <p className="bottom">
-            Copyright © <a href="https://syam.me">Syam.me</a> 2022
+            Copyright © <a href="https://jesspaude.ca">jesspaude.ca</a> 2022
           </p>
         </div>
       </div>
