@@ -24,7 +24,7 @@ export default function Hero() {
           Digital Ocean • DevOps
         </p>
 
-        <a href="#">and more +</a>
+        <a href="#">+ more</a>
       </div>
 
       <div className={`${styles.location} ${styles.subsection}`}>

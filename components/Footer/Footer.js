@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
         <div className="copyright">
           <p className="bottom">
-            Copyright © <a href="https://jesspaude.ca">jesspaude.ca</a> 2022
+            Copyright © <a href="https://jspaude.ca">jspaude.ca</a> 2022
           </p>
         </div>
       </div>

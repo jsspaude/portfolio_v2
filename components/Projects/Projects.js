@@ -6,7 +6,8 @@ export default function Projects() {
   const projects = [
     {
       title: 'Aragon',
-      content: 'Fully custom wordpress theme. \n LEMP Stack - Digital Ocean',
+      content:
+        'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://aragon.ca',
       domain: 'Aragon.ca',
       img: 'aragon.png',
@@ -14,23 +15,42 @@ export default function Projects() {
     },
     {
       title: 'TAG Whistler',
-      content: 'Fully custom wordpress theme. \n LEMP Stack - Digital Ocean',
+      content:
+        'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://tagwhistler.com',
       domain: 'TagWhistler.com',
       img: 'tagwhistler.png',
       company: 'Colony Digital',
     },
     {
+      title: 'Sweatalus Mock Draft',
+      content: 'Progressive web app and database  \n React - Firebase - Vercel',
+      url: 'https://sweatalus-mock-draft.netlify.app/',
+      domain: 'Sweatalus Mock Draft',
+      img: 'sweatalus.png',
+      company: 'jspaude.ca',
+    },
+    {
       title: 'Marine Landing',
-      content: 'Fully custom wordpress theme. \n LEMP Stack - Digital Ocean',
+      content:
+        'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://marinelanding.ca',
       domain: 'MarineLanding.ca',
       img: 'marinelanding.png',
       company: 'Colony Digital',
     },
     {
+      title: 'jspaude.ca',
+      content: 'A Next.js project \n React - Next.js - Digital Ocean',
+      url: 'https://jspaude.ca/',
+      domain: 'jspaude.ca',
+      img: 'sweatalus.png',
+      company: 'jspaude.ca',
+    },
+    {
       title: 'Home In BC',
-      content: 'Fully custom wordpress theme. \n LEMP Stack - Digital Ocean',
+      content:
+        'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://homeinbc.ca',
       domain: 'HomeInBC.ca',
       img: 'homeinbc.png',
@@ -38,7 +58,8 @@ export default function Projects() {
     },
     {
       title: 'FishRite',
-      content: 'Fully custom wordpress theme. \n LEMP Stack - Digital Ocean',
+      content:
+        'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://fishrite.ca',
       domain: 'FishRite.ca',
       img: 'fishrite.png',

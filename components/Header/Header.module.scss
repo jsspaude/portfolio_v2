@@ -12,23 +12,21 @@ header.header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-wrap: nowrap;
-  }
 
-  .top .subhead {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-  }
+    h2 {
+      font-size: 1rem;
+      margin-bottom: 0;
+      line-height: 1.5rem;
+    }
 
-  .top .subhead p {
-    margin: 0;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    margin-left: 1.5rem;
-    color: #e85a4f;
+    p {
+      margin-left: 1.5rem;
+      font-size: 0.75rem;
+      margin-bottom: 0;
+      line-height: 1.5rem;
+      color: #e85a4f;
+    }
   }
 }

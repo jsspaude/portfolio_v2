@@ -1,13 +1,23 @@
 section.projects {
   .hidden {
-    display: none;
+    opacity: 0;
+    max-height: 0px;
     height: 0;
-    transition: height 1500ms ease;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    * {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+    }
   }
 
   .grow {
-    height: 1000px !important;
-    transition: height 1500ms ease;
+    height: auto;
+    max-height: 1000px;
+    opacity: 1;
+    transition: opacity 1500ms ease, max-height 1500ms ease;
   }
 
   .projects {
