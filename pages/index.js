@@ -1,11 +1,10 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
-import About from '../components/About';
+import styles from './Home.module.scss';
+import Header from '../components/Header/Header';
+import Hero from '../components/Hero/Hero';
+import Footer from '../components/Footer/Footer';
+import Projects from '../components/Projects/Projects';
+import Contact from '../components/Contact/Contact';
 import React from 'react';
 
 export default function Home() {
@@ -51,7 +50,7 @@ export default function Home() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -59,7 +58,6 @@ export default function Home() {
         <Header />
         <Hero />
         <Projects />
-        <About />
         <Contact />
         <Footer />
       </main>
