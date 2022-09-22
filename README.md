@@ -1,13 +1,14 @@
-<h1 align="center">Hi 👋, I'm Syamlal</h1>
-<h3 align="center">A software developer from India</h3>
+<h1 align="center">Hi 👋, I'm Jess</h1>
+<h3 align="center">A full stack web developer in Vancouver</h3>
 
 ## 💬 Ask me about
+
 - Backend web development
-- Frontend web development (React.js)
+- Frontend web development (React, Wordpress)
 
 ## 📅 Hobbies
-- Solve programming problems at Codeforces, UVa, LeetCode
-- Watch anime and Tv shows
-- Read some manga
-- Play videogames
-- etc.
+
+- Creative writing
+- Fantasy Sports
+- Gardening
+- Cooking

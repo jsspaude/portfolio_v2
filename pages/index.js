@@ -14,12 +14,12 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          Jess Spaude ← Web Developer at Colony Digital, • Next.js • React.js •
+          Jess Spaude ← Web Developer at Colony Digital, • Next.js • React •
           Wordpress • PHP • MySql • Cloud Computing • Digital Ocean • DevOps
         </title>
         <meta
           name="description"
-          content="Jess is a web developer at Colony Digital. He has experience in next.js, react.js, wordpress, php, mysql, cloud computing (digitalocean) and devops"
+          content="Jess is a web developer at Colony Digital. He has experience in next.js, React, wordpress, php, mysql, cloud computing (digitalocean) and devops"
         />
         <meta name="theme-color" content="#ffffff" />
 
@@ -27,7 +27,7 @@ export default function Home() {
         <meta
           name="og:title"
           content="
-          Jess Spaude ← Web Developer, • Next.js • React.js • Wordpress • PHP • MySql • Cloud Computing • Digital Ocean • DevOps"
+          Jess Spaude ← Web Developer, • Next.js • React • Wordpress • PHP • MySql • Cloud Computing • Digital Ocean • DevOps"
         />
         <meta
           name="keywords"
@@ -37,7 +37,7 @@ export default function Home() {
         <meta
           name="og:description"
           content="
-          Jess Spaude ← Web Developer at Colony Digital, • Next.js • React.js • Wordpress • PHP • MySql • Cloud Computing • Digital Ocean • DevOps"
+          Jess Spaude ← Web Developer at Colony Digital, • Next.js • React • Wordpress • PHP • MySql • Cloud Computing • Digital Ocean • DevOps"
         />
         <meta name="og:image" content="/assets/images/jess.png" />
 

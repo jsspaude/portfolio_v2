@@ -38,6 +38,14 @@ export default function Experience() {
     },
   ];
 
+  const technologies = [
+    {
+      name: 'React',
+      image: '',
+      url: '',
+    },
+  ];
+
   return (
     <section className={styles.experience}>
       <h3>Experience</h3>
