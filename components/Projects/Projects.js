@@ -7,7 +7,7 @@ export default function Projects() {
     {
       title: 'Aragon',
       content:
-        'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
+        'Fully custom wordpress theme and cms. \n LAMP Stack - Digital Ocean',
       url: 'https://aragon.ca',
       domain: 'Aragon.ca',
       img: 'aragon.png',
@@ -72,7 +72,7 @@ export default function Projects() {
     const projects = document.querySelectorAll("[data-content='project']");
     console.log(trigger);
     trigger.addEventListener('click', () => {
-      trigger.classList.add('hidden');
+      trigger.style.display = 'none';
       projects.forEach((project) => {
         project.classList.remove(styles.hidden);
         project.classList.add(styles.grow);

@@ -20,12 +20,14 @@ export default function Footer() {
               </ul>
             </li>
             <li>
-              <a href="mailto:jsspaude@gmail.com">jsspaude@gmail</a>
+              <div className={styles.email}>
+                <a href="mailto:jsspaude@gmail.com">jsspaude@gmail</a>
+              </div>
             </li>
           </ul>
         </div>
-        <div className="copyright">
-          <p className="bottom">
+        <div className={styles.footer__copyright}>
+          <p>
             Copyright © <a href="https://jspaude.ca">jspaude.ca</a> 2022
           </p>
         </div>

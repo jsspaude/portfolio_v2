@@ -4,10 +4,6 @@ footer.footer {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-
-      ul {
-        padding: 0 0 0 0;
-      }
     }
 
     &__contact {
@@ -17,9 +13,18 @@ footer.footer {
         justify-content: flex-start;
         align-items: center;
         margin: 0 0 0 0;
+        padding: 2rem 0 2rem 0;
 
         li {
           list-style-type: none;
+
+          ul {
+            padding: 0;
+          }
+        }
+
+        .email {
+          margin-left: 1rem;
         }
       }
 
@@ -34,6 +39,13 @@ footer.footer {
       svg {
         width: 3rem;
         margin-right: 0.75rem;
+      }
+    }
+
+    &__copyright {
+      p,
+      a {
+        font-size: 0.75rem;
       }
     }
   }
