@@ -6,8 +6,37 @@ body {
   background-color: #fff;
 }
 
+section,
+footer {
+  padding: 2rem 0rem;
+}
+
 h3 {
   color: #e85a4f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -1rem;
+
+  &:before {
+    content: '< ';
+    align-self: flex-start;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    margin-right: 0.5rem;
+    font-style: italic;
+    opacity: 0.25;
+  }
+
+  &:after {
+    content: ' />';
+    align-self: flex-end;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    margin-left: 0.5rem;
+    font-style: italic;
+    opacity: 0.25;
+  }
 }
 
 a {

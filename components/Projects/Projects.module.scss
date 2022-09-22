@@ -20,6 +20,16 @@ section.projects {
     transition: opacity 1500ms ease, max-height 1500ms ease;
   }
 
+  ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    display: block;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
   .projects {
     &__item {
       height: auto;

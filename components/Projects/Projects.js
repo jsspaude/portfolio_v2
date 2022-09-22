@@ -85,38 +85,40 @@ export default function Projects() {
   });
 
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="projects">
       <h3>Projects</h3>
 
-      <div className={styles.projects__container}>
-        {projects.map((item, index) => {
-          const display = index > 2 ? styles.hidden : '';
-          return (
-            <div
-              className={`${styles.projects__item} ${display}`}
-              key={`project-${index}`}
-              data-content="project"
-            >
-              <div className={styles.projects__title}>
-                <h4>{item.title}</h4>
-              </div>
-              <div className={styles.projects__img}>
-                <img src={`/assets/images/projects/${item.img}`} />
-              </div>
-              <div className={styles.projects__content}>
-                <p>{item.content}</p>
-                <p className={styles.company}>A {item.company} project</p>
-                <a
-                  href={`${item.url}`}
-                  target="_blank"
-                  className="projects__link"
-                >
-                  {item.domain} &rarr;
-                </a>
-              </div>
-            </div>
-          );
-        })}
+      <div className={styles.container}>
+        <ul className={styles.projects__container}>
+          {projects.map((item, index) => {
+            const display = index > 2 ? styles.hidden : '';
+            return (
+              <li
+                className={`${styles.projects__item} ${display}`}
+                key={`project-${index}`}
+                data-content="project"
+              >
+                <div className={styles.projects__title}>
+                  <h4>{item.title}</h4>
+                </div>
+                <div className={styles.projects__img}>
+                  <img src={`/assets/images/projects/${item.img}`} />
+                </div>
+                <div className={styles.projects__content}>
+                  <p>{item.content}</p>
+                  <p className={styles.company}>A {item.company} project</p>
+                  <a
+                    href={`${item.url}`}
+                    target="_blank"
+                    className="projects__link"
+                  >
+                    {item.domain} &rarr;
+                  </a>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
 
       <div className={styles.projects__more}>

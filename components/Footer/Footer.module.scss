@@ -1,0 +1,40 @@
+footer.footer {
+  .footer {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      ul {
+        padding: 0 0 0 0;
+      }
+    }
+
+    &__contact {
+      &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 0 0;
+
+        li {
+          list-style-type: none;
+        }
+      }
+
+      &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0 0 0 0;
+        margin-bottom: 0.5rem;
+      }
+
+      svg {
+        width: 3rem;
+        margin-right: 0.75rem;
+      }
+    }
+  }
+}

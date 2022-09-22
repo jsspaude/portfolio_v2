@@ -1,5 +1,5 @@
 section.hero {
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
   position: relative;
   margin-top: 90px;
   display: flex;
@@ -54,7 +54,8 @@ section.hero {
   }
 
   .experience {
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .location {
@@ -62,7 +63,8 @@ section.hero {
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     p {
       margin-right: 2rem;

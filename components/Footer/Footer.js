@@ -1,46 +1,26 @@
 import styles from './Footer.module.scss';
+import LinkedIn from '../SVG/LinkedIn/LinkedIn';
+import GitHub from '../SVG/GitHub/GitHub';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className="container">
-        <div className="social-accounts">
-          <ul className="list-inline">
-            <li className="list-inline-item">
-              <a
-                href="mailto:jsspaude@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-sm btn-default btn-lg"
-              >
-                <img src="/assets/svg/email.svg" alt="An SVG of an @ symbol" />
-              </a>
+      <h3>Contact</h3>
+      <div className={styles.footer__container}>
+        <div className={styles.footer__contact}>
+          <ul className={styles.footer__contact__container}>
+            <li>
+              <ul className={styles.footer__contact__social}>
+                <li>
+                  <LinkedIn />
+                </li>
+                <li>
+                  <GitHub />
+                </li>
+              </ul>
             </li>
-            <li className="list-inline-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-                className="btn-sm btn-default btn-lg"
-              >
-                <img
-                  src="/assets/svg/linkedin.svg"
-                  alt="An SVG of the linkedin symbol"
-                />
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a
-                href="https://www.github.com/techomoro"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-sm btn-default btn-lg"
-              >
-                <img
-                  src="/assets/svg/github.svg"
-                  alt="An SVG of the github symbol"
-                />
-              </a>
+            <li>
+              <a href="mailto:jsspaude@gmail.com">jsspaude@gmail</a>
             </li>
           </ul>
         </div>
