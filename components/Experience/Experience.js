@@ -173,6 +173,10 @@ export default function Experience() {
     },
   ];
 
+  const mapTech = () => {
+    technologies.map((item, index) => {});
+  };
+
   return (
     <section className={styles.experience}>
       <h3>Experience</h3>
