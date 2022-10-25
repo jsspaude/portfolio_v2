@@ -1,4 +1,3 @@
-import { Card, Col, Row } from 'react-bootstrap';
 import styles from './Projects.module.scss';
 import { useEffect } from 'react';
 
@@ -37,6 +36,15 @@ export default function Projects() {
       url: 'https://marinelanding.ca',
       domain: 'MarineLanding.ca',
       img: 'marinelanding.png',
+      company: 'Colony Digital',
+    },
+    {
+      title: 'JOEY Restaurants',
+      content:
+        'Updating and maintaing legacy code stack that uses a hybrid of laravel, react, and craft cms',
+      url: 'https://joeyrestaurants.com',
+      domain: 'JOEYRestaurants.ca',
+      img: 'joeyrestaurants.png',
       company: 'Colony Digital',
     },
     {

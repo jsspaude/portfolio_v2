@@ -1,4 +1,3 @@
-import { Card, Col, Row } from 'react-bootstrap';
 import styles from './Experience.module.scss';
 import { useEffect } from 'react';
 
@@ -43,6 +42,12 @@ export default function Experience() {
       name: 'React',
       image: '/assets/svg/experience/react.svg',
       url: 'https://reactjs.org/',
+      type: 'framework',
+    },
+    {
+      name: 'Laravel',
+      image: '/assets/svg/experience/laravel.svg',
+      url: 'https://laravel.com/',
       type: 'framework',
     },
     {
@@ -167,29 +172,63 @@ export default function Experience() {
     },
     {
       name: 'Visual Studio',
-      image: '/assets/svg/experience/apache.svg',
-      url: 'https://www.nginx.com/',
+      image: '/assets/svg/experience/visual_studio.svg',
+      url: 'https://visualstudio.microsoft.com/',
       type: 'environment',
     },
   ];
 
-  const mapTech = () => {
-    technologies.map((item, index) => {});
+  const technologiesMapped = technologies.reduce(function (r, a) {
+    r[a.type] = r[a.type] || [];
+    r[a.type].push(a);
+    return r;
+  }, Object.create(null));
+
+  const technologiesTypes = Object.keys(technologiesMapped);
+
+  const viewMore = () => {
+    const trigger = document.querySelector("[data-trigger='view_more_tech']");
+    const technologies = document.querySelectorAll(
+      "[data-content='technology']"
+    );
+    console.log(trigger);
+    trigger.addEventListener('click', () => {
+      trigger.style.display = 'none';
+      technologies.forEach((technology) => {
+        technology.classList.remove(styles.hidden);
+        technology.classList.add(styles.grow);
+      });
+    });
   };
+
+  useEffect(() => {
+    viewMore();
+  });
 
   return (
     <section className={styles.experience}>
-      <h3>Experience</h3>
+      <h3>Experience:</h3>
+
+      {/* <div className={styles.experience__nav}>
+        {technologiesTypes.map((type, key) => {
+          return <p key={key}>{type}</p>;
+        })}
+      </div> */}
 
       <div className={styles.container}>
         <div className={styles.experience__tech}>
+          <br />
+          <br />
+          <h4>Tech</h4>
           <ul className={styles.experience__tech__container}>
             {technologies.map((item, index) => {
+              const display = index > 9 ? styles.hidden : '';
               return (
                 <li
-                  className={styles.experience__tech__item}
+                  className={`${styles.experience__tech__item} ${display}`}
                   key={`experience-${index}`}
-                  data-content="experience"
+                  data-content="technology"
+                  data-type={item.type}
                 >
                   <div className={styles.experience__tech__title}>
                     <h5>{item.name}</h5>
@@ -210,15 +249,22 @@ export default function Experience() {
               );
             })}
           </ul>
+          <div className={styles.experience__more}>
+            <a data-trigger="view_more_tech" href="#0">
+              View More
+            </a>
+          </div>
         </div>
         <div className={styles.experience__companies}>
+          <br />
+          <br />
+          <h4>Companies:</h4>
           <ul className={styles.experience__companies__container}>
             {companies.map((item, index) => {
-              const display = index > 2 ? styles.hidden : '';
               const years = item.years > 1 ? 'years' : 'year';
               return (
                 <li
-                  className={`${styles.experience__companies__item} ${display}`}
+                  className={`${styles.experience__companies__item}`}
                   key={`experience-${index}`}
                   data-content="experience"
                 >

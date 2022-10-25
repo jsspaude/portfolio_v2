@@ -1,4 +1,18 @@
 section.experience {
+  .hidden {
+    opacity: 0;
+    max-height: 0px;
+    height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    * {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+    }
+  }
+
   ul {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -71,11 +85,21 @@ section.experience {
       &__item {
         width: 50%;
         height: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
       }
 
       &__title {
-        opacity: 0;
         position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: rgba(255, 255, 255, 0.5);
       }
 
       &__content {
@@ -91,6 +115,27 @@ section.experience {
           height: 150px;
           max-width: 75%;
         }
+      }
+    }
+
+    &__more {
+      a {
+        display: block;
+        width: 50%;
+        margin: 30px auto;
+        padding: 30px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        background-color: #70798c;
+      }
+
+      .hidden {
+        opacity: 0;
+        max-height: 0px;
+        height: 0;
+        margin: 0 !important;
+        padding: 0 !important;
       }
     }
   }
