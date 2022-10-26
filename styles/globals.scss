@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif !important;
   background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 section,
@@ -48,8 +50,10 @@ a {
 }
 
 a {
+  transition: color 500ms ease, opacity 500ms ease;
   &:hover {
-    text-decoration: underline;
+    opacity: 0.5;
+    color: #70798c;
   }
 
   span {

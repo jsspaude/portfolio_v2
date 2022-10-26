@@ -1,0 +1,27 @@
+// Breakpoints
+// -----------------------------------
+// 0 - 599px is assumed mobile
+
+// Starting tablet width
+$tab: 'only screen and (min-width : 600px)';
+
+// Tablet Portrait
+$ptab: 'only screen and (min-width: 768px)';
+
+// Tablet Landscape
+$ltab: 'only screen and (min-width: 1024px)';
+
+// Tablet Landscape (Height Based)
+$lTabHeight: 'only screen and (max-height: 672px)';
+
+// No devices, desktop and up
+$desk: 'only screen and (min-width: 1025px)';
+
+//
+$deskMed: 'only screen and (min-width: 1100px)';
+
+// Desktop & Up
+$desktop: 'only screen and (min-width: 1200px)';
+
+// Laptop height
+$laptopHeight: 'only screen and (max-height: 750px)';

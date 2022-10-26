@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 section.hero {
   min-height: calc(100vh - 90px);
   position: relative;
@@ -5,6 +7,10 @@ section.hero {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media #{$desk} {
+    margin-top: 50px;
+  }
 
   .subsection {
     flex: 1;
@@ -27,16 +33,6 @@ section.hero {
     h3 {
       text-align: left;
       color: #e85a4f;
-    }
-
-    .image {
-      width: 9rem;
-      height: 9rem;
-      border-radius: 25%;
-      margin-top: -5rem;
-      cursor: pointer;
-      overflow: hidden;
-      display: none;
     }
 
     img {
@@ -66,12 +62,10 @@ section.hero {
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    p {
-      margin-right: 2rem;
-    }
-
-    &__image {
-      flex: 1;
+    @media #{$desk} {
+      justify-content: flex-end;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -86,24 +80,32 @@ section.hero {
 
   .icons {
     &__container {
-      width: 75%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      padding: 2rem 0;
+      padding: 0.5rem 0 2rem 0;
+
+      a {
+        transition: opacity 500ms ease, transform 500ms ease;
+
+        &:hover {
+          transform: scale(0.9);
+          opacity: 0.5;
+        }
+      }
     }
 
-    &__text {
-      padding-bottom: 1rem;
+    &__image {
+      flex: 1;
 
-      p,
-      a {
-        padding: 0;
-      }
-
-      a {
-        display: inline;
+      @media #{$desk} {
+        svg {
+          float: right;
+          width: 300px;
+          max-height: 100px;
+        }
       }
     }
 

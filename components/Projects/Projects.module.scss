@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 section.projects {
   .hidden {
     opacity: 0;
@@ -36,6 +38,10 @@ section.projects {
       padding: 2rem 1.5rem 0px 1.5rem;
       margin-top: 40px;
 
+      @media #{$desk} {
+        width: 75%;
+      }
+
       &:nth-child(odd) {
         background-color: #252323;
       }
@@ -73,6 +79,7 @@ section.projects {
         font-family: 'Open Sans', sans-serif;
         color: white;
         font-size: 0.75rem;
+        width: 25%;
       }
     }
 

@@ -94,7 +94,7 @@ export default function Projects() {
 
   return (
     <section className={styles.projects} id="projects">
-      <h3>Projects</h3>
+      <h3>Portfolio</h3>
 
       <div className={styles.container}>
         <ul className={styles.projects__container}>

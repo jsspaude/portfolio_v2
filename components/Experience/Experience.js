@@ -206,7 +206,7 @@ export default function Experience() {
   });
 
   return (
-    <section className={styles.experience}>
+    <section id="experience" className={styles.experience}>
       <h3>Experience:</h3>
 
       {/* <div className={styles.experience__nav}>
@@ -216,49 +216,10 @@ export default function Experience() {
       </div> */}
 
       <div className={styles.container}>
-        <div className={styles.experience__tech}>
-          <br />
-          <br />
-          <h4>Tech</h4>
-          <ul className={styles.experience__tech__container}>
-            {technologies.map((item, index) => {
-              const display = index > 9 ? styles.hidden : '';
-              return (
-                <li
-                  className={`${styles.experience__tech__item} ${display}`}
-                  key={`experience-${index}`}
-                  data-content="technology"
-                  data-type={item.type}
-                >
-                  <div className={styles.experience__tech__title}>
-                    <h5>{item.name}</h5>
-                  </div>
-                  <div className={styles.experience__tech__content}>
-                    <img src={item.image} alt={`${item.name} Logo`} />
-                    {item.domain && (
-                      <a
-                        href={`${item.url}`}
-                        target="_blank"
-                        className="Experience__link"
-                      >
-                        {item.domain} &rarr;
-                      </a>
-                    )}
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-          <div className={styles.experience__more}>
-            <a data-trigger="view_more_tech" href="#0">
-              View More
-            </a>
-          </div>
-        </div>
         <div className={styles.experience__companies}>
           <br />
           <br />
-          <h4>Companies:</h4>
+          <h4>Professional:</h4>
           <ul className={styles.experience__companies__container}>
             {companies.map((item, index) => {
               const years = item.years > 1 ? 'years' : 'year';
@@ -292,6 +253,45 @@ export default function Experience() {
               );
             })}
           </ul>
+        </div>
+        <div className={styles.experience__tech}>
+          <br />
+          <br />
+          <h4>Tech</h4>
+          <ul className={styles.experience__tech__container}>
+            {technologies.map((item, index) => {
+              const display = index > 9 ? styles.hidden : '';
+              return (
+                <li
+                  className={`${styles.experience__tech__item} ${display}`}
+                  key={`experience-${index}`}
+                  data-content="technology"
+                  data-type={item.type}
+                >
+                  {item.url && (
+                    <a
+                      href={`${item.url}`}
+                      target="_blank"
+                      className="Experience__link"
+                    >
+                      <div className={styles.experience__tech__content}>
+                        <img src={item.image} alt={`${item.name} Logo`} />
+                      </div>
+                      <div className={styles.experience__tech__title}>
+                        <h5>{item.name}</h5>
+                        <p>({item.type})</p>
+                      </div>
+                    </a>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+          <div className={styles.experience__more}>
+            <a data-trigger="view_more_tech" href="#0">
+              View More
+            </a>
+          </div>
         </div>
       </div>
     </section>

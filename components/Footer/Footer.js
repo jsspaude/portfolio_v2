@@ -12,10 +12,17 @@ export default function Footer() {
             <li>
               <ul className={styles.footer__contact__social}>
                 <li>
-                  <LinkedIn />
+                  <a
+                    href="https://www.linkedin.com/in/jess-spaude/"
+                    target="_blank"
+                  >
+                    <LinkedIn />
+                  </a>
                 </li>
                 <li>
-                  <GitHub />
+                  <a href="https://github.com/jsspaude" target="_blank">
+                    <GitHub />
+                  </a>
                 </li>
               </ul>
             </li>
