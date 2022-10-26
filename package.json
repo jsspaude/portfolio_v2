@@ -7,7 +7,9 @@
     "clean": "rm -rf .next",
     "start": "npm run clean && next",
     "build": "npm run clean && next build",
-    "prod": "next start -p 8080"
+    "dp:prod": "git push origin main && npm run rb:prod",
+    "rb:prod": "ssh -t root@143.198.46.170 \"cd /var/www/jspaude_ca/ && git pull origin main && npm run rs:prod\"",
+    "rs:prod": "pm2 restart jspaude"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
