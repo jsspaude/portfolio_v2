@@ -7,7 +7,7 @@
     "clean": "rm -rf .next",
     "start": "npm run clean && next",
     "build": "npm run clean && next build",
-    "prod": "npm run build && next start -p 8080"
+    "prod": "next start -p 8080"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
