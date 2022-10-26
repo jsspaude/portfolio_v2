@@ -5,8 +5,9 @@
     "dev": "next dev",
     "lint": "next lint",
     "clean": "rm -rf .next",
-    "start": "npm run clean && next start",
-    "build": "npm run clean && next build"
+    "start": "npm run clean && next",
+    "build": "npm run clean && next build",
+    "prod": "npm run build && next start -p 80"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
