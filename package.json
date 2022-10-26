@@ -5,7 +5,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "clean": "rm -rf .next",
-    "start": "npm run build && next start -p 3001",
+    "start": "npm run build && next -p 3001",
     "build": "npm run clean && next build"
   },
   "dependencies": {
