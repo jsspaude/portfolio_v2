@@ -22,6 +22,15 @@ export default function Projects() {
       company: 'Colony Digital',
     },
     {
+      title: 'Westbank',
+      content:
+        'Maintenance, updates, and server management for all projects \n Next.js - Wordpress - Digital Ocean - Media Temple',
+      url: 'https://westbankcorp.com',
+      domain: 'Westbankcorp.com',
+      img: 'westbank.png',
+      company: 'Colony Digital',
+    },
+    {
       title: 'Sweatalus Mock Draft',
       content: 'Progressive web app and database  \n React - Firebase - Vercel',
       url: 'https://sweatalus-mock-draft.netlify.app/',
@@ -52,7 +61,7 @@ export default function Projects() {
       content: 'A Next.js project \n React - Next.js - Digital Ocean',
       url: 'https://jspaude.ca/',
       domain: 'jspaude.ca',
-      img: 'sweatalus.png',
+      img: 'jspaude.png',
       company: 'jspaude.ca',
     },
     {
@@ -72,6 +81,15 @@ export default function Projects() {
       domain: 'FishRite.ca',
       img: 'fishrite.png',
       company: 'Colony Digital',
+    },
+    {
+      title: 'MoveHelpers',
+      content:
+        'Full site build using Elementor and the Salient WordPress theme',
+      url: 'https://movehelpers.ca',
+      domain: 'MoveHelpers.ca',
+      img: 'movehelpers.png',
+      company: 'Vancouver Websites',
     },
   ];
 
@@ -130,7 +148,7 @@ export default function Projects() {
       </div>
 
       <div className={styles.projects__more}>
-        <a data-trigger="view_more" href="#0">
+        <a data-trigger="view_more" href="javascrit:void(0)">
           View More
         </a>
       </div>

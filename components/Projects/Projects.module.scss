@@ -40,6 +40,8 @@ section.projects {
 
       @media #{$desk} {
         width: 75%;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       &:nth-child(odd) {
@@ -82,7 +84,7 @@ section.projects {
         width: 100%;
 
         @media #{$desk} {
-          width: 25%;
+          width: 33%;
         }
       }
     }

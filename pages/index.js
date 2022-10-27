@@ -55,6 +55,9 @@ export default function Home() {
         />
       </Head>
       <main className={'page__' + router}>
+        {/* Welcome to my portfolio. */}
+        {/* This project was built using Next.js and designed used Adobe Illustrator */}
+        {/* If you wish to see the code please check out the repo at https://github.com/jsspaude/portfolio_v2 */}
         <Header />
         <Hero />
         <Projects />

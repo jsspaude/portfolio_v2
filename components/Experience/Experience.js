@@ -288,7 +288,7 @@ export default function Experience() {
             })}
           </ul>
           <div className={styles.experience__more}>
-            <a data-trigger="view_more_tech" href="#0">
+            <a data-trigger="view_more_tech" href="javascript:void(0)">
               View More
             </a>
           </div>
