@@ -155,15 +155,15 @@ export default function Projects() {
           {projects.map((item, index) => {
             const display = index > 2 ? styles.hidden : '';
             return (
-              <Link
-                href={`${item.url}`}
-                target="_blank"
-                className="projects__link"
+              <li
+                className={`${styles.projects__item} ${display}`}
+                key={`project-${index}`}
+                data-content="project"
               >
-                <li
-                  className={`${styles.projects__item} ${display}`}
-                  key={`project-${index}`}
-                  data-content="project"
+                <a
+                  href={`${item.url}`}
+                  target="_blank"
+                  className="projects__link"
                 >
                   <div className={styles.projects__title}>
                     <h4>{item.title}</h4>
@@ -182,8 +182,8 @@ export default function Projects() {
                       {item.domain} &rarr;
                     </a>
                   </div>
-                </li>
-              </Link>
+                </a>
+              </li>
             );
           })}
         </ul>
