@@ -1,5 +1,6 @@
 import styles from './Hero.module.scss';
 import Skyline from '../SVG/Skyline/Skyline';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       <div className={`${styles.intro} ${styles.subsection}`}>
         <div className={styles.text}>
           <h3>Welcome,</h3>
-          <p>I’m Jess, a full stack web developer.</p>
+          <p>I'm Jess, a full stack web developer.</p>
         </div>
       </div>
 
@@ -24,16 +25,25 @@ export default function Hero() {
       <div className={`${styles.icons} ${styles.subsection}`}>
         <div className={styles.icons__container}>
           <a href="mailto:jsspaude@gmail.com" target="_blank">
-            <img src="/assets/svg/email.svg" alt="An SVG of an @ symbol" />
+            <Image
+              src="/assets/svg/email.svg"
+              width="50px"
+              height="50px"
+              alt="An SVG of an @ symbol"
+            />
           </a>
           <a href="https://www.linkedin.com/in/jess-spaude/" target="_blank">
-            <img
+            <Image
+              width="50px"
+              height="50px"
               src="/assets/svg/linkedin.svg"
               alt="An SVG of the linkedin symbol"
             />
           </a>
           <a href="https://github.com/jsspaude" target="_blank">
-            <img
+            <Image
+              width="50px"
+              height="50px"
               src="/assets/svg/github.svg"
               alt="An SVG of the github symbol"
             />

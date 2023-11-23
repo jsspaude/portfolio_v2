@@ -1,5 +1,6 @@
 import styles from './Experience.module.scss';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Experience() {
   const companies = [
@@ -294,7 +295,12 @@ export default function Experience() {
                       className="Experience__link"
                     >
                       <div className={styles.experience__tech__content}>
-                        <img src={item.image} alt={`${item.name} Logo`} />
+                        <Image
+                          width="100%"
+                          height="100%"
+                          src={item.image}
+                          alt={`${item.name} Logo`}
+                        />
                       </div>
                       <div className={styles.experience__tech__title}>
                         <h5>{item.name}</h5>
@@ -307,9 +313,7 @@ export default function Experience() {
             })}
           </ul>
           <div className={styles.experience__more}>
-            <a data-trigger="view_more_tech" href="javascript:void(0)">
-              View More
-            </a>
+            <button data-trigger="view_more_tech">View More</button>
           </div>
         </div>
       </div>

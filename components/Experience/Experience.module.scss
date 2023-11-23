@@ -110,7 +110,7 @@ section.experience {
           &:hover {
             text-decoration: none;
             opacity: 0.75;
-            transform: scale(0.9);
+            transform: scale(0.95);
           }
 
           h5 {
@@ -151,7 +151,7 @@ section.experience {
     }
 
     &__more {
-      a {
+      button {
         display: block;
         width: 50%;
         margin: 30px auto;
@@ -160,6 +160,15 @@ section.experience {
         color: #fff;
         text-decoration: none;
         background-color: #70798c;
+        transition: all 500ms ease;
+        opacity: 1;
+        border: none;
+        outline: none;
+
+        &:hover {
+          transform: scale(0.99);
+          opacity: 0.5;
+        }
       }
 
       .hidden {

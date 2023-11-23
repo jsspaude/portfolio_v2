@@ -1,6 +1,6 @@
 import styles from './Projects.module.scss';
 import { useEffect } from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
@@ -9,7 +9,7 @@ export default function Projects() {
       content:
         'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
       url: 'https://bowerhouse.ca',
-      domain: 'bowerhousecom',
+      domain: 'bowerhouse.ca',
       img: 'bowerhouse.jpg',
       company: 'bowerhouse',
     },
@@ -132,7 +132,6 @@ export default function Projects() {
   const viewMore = () => {
     const trigger = document.querySelector("[data-trigger='view_more']");
     const projects = document.querySelectorAll("[data-content='project']");
-    console.log(trigger);
     trigger.addEventListener('click', () => {
       trigger.style.display = 'none';
       projects.forEach((project) => {
@@ -169,18 +168,22 @@ export default function Projects() {
                     <h4>{item.title}</h4>
                   </div>
                   <div className={styles.projects__img}>
-                    <img src={`/assets/images/projects/${item.img}`} />
+                    <Image
+                      width="100%"
+                      height="100%"
+                      src={`/assets/images/projects/${item.img}`}
+                    />
                   </div>
                   <div className={styles.projects__content}>
                     <p>{item.content}</p>
                     <p className={styles.company}>A {item.company} project</p>
-                    <a
+                    <span
                       href={`${item.url}`}
                       target="_blank"
                       className="projects__link"
                     >
                       {item.domain} &rarr;
-                    </a>
+                    </span>
                   </div>
                 </a>
               </li>
@@ -190,9 +193,7 @@ export default function Projects() {
       </div>
 
       <div className={styles.projects__more}>
-        <a data-trigger="view_more" href="javascrit:void(0)">
-          View More
-        </a>
+        <button data-trigger="view_more">View More</button>
       </div>
     </section>
   );

@@ -41,7 +41,7 @@ section.projects {
       cursor: pointer;
 
       &:hover {
-        transform: scale(0.9);
+        transform: scale(0.95);
         opacity: 1;
       }
 
@@ -89,7 +89,7 @@ section.projects {
         }
       }
 
-      a {
+      span {
         display: block;
         padding: 1rem 0 2rem 0;
         font-family: 'Open Sans', sans-serif;
@@ -116,7 +116,7 @@ section.projects {
     }
 
     &__more {
-      a {
+      button {
         display: block;
         width: 50%;
         margin: 30px auto;
@@ -125,6 +125,15 @@ section.projects {
         color: #fff;
         text-decoration: none;
         background-color: #70798c;
+        transition: all 500ms ease;
+        opacity: 1;
+        border: none;
+        outline: none;
+
+        &:hover {
+          transform: scale(0.99);
+          opacity: 0.5;
+        }
       }
 
       .hidden {
