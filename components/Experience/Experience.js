@@ -279,7 +279,7 @@ export default function Experience() {
           <h4>Tech:</h4>
           <ul className={styles.experience__tech__container}>
             {technologies.map((item, index) => {
-              const display = index > 9 ? styles.hidden : '';
+              const display = index > 11 ? styles.hidden : '';
               return (
                 <li
                   className={`${styles.experience__tech__item} ${display}`}

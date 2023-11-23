@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 section.experience {
   padding-top: 100px;
 
@@ -91,7 +93,12 @@ section.experience {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        gap: 30px;
+
+        @media #{$desk} {
+          width: 33%;
+        }
 
         a {
           display: flex;
@@ -129,13 +136,16 @@ section.experience {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        height: 150px;
+        width: 150px;
 
         img {
           object-fit: contain;
           text-align: center;
           margin: auto;
-          height: 150px;
-          max-width: 75%;
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
         }
       }
     }
