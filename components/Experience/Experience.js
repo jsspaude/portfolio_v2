@@ -4,11 +4,20 @@ import { useEffect } from 'react';
 export default function Experience() {
   const companies = [
     {
-      name: 'Colony Digital',
+      name: 'bowerhouse',
+      years: 1,
+      title: 'Fullstack Operations Developer',
+      duties:
+        'In charge of full stack development for our clients. \n • Built and managed full scale experiences using a wordpress LEMP stack or next.js. \n • Built and managed cloud servers. \n • Built and managed internal development documentation. \n • On boarded and mentored newer developers. \n • Managed and maintained internal and external servers. \n • Liase with clients and partners to provide technical support and quotes.',
+      url: 'https://bowerhouse.ca',
+      domain: 'bowerhouse.ca',
+    },
+    {
+      name: 'ColonyDigital',
       years: 3,
       title: 'Web Developer',
       duties:
-        'In charge of full stack development for our clients. \n • Built and managed full scale experiences using a wordpress LEMP stack or next.js. \n • Built and managed cloud servers. \n • Built and managed internal development documentation. \n • On boarded and mentored newer developers.',
+        'In charge of full stack development for our clients. \n • Built and managed full scale experiences using a wordpress LEMP stack or next.js. \n • Built and managed cloud servers. \n • Built and managed internal development documentation. \n • On boarded and mentored newer developers. \n • Managed and maintained internal and external servers. \n • Liase with clients and partners to provide technical support and quotes.',
       url: 'https://colonydigital.ca',
       domain: 'ColonyDigital.ca',
     },
@@ -31,6 +40,7 @@ export default function Experience() {
     },
     {
       name: 'Hospitality Managment',
+      title: 'Manger/General Manager',
       years: 12,
       duties:
         'Management experience and training in companies such as: Hotel Le Germain, Wentworth Hospitality, Hoppy Inc, Pizzeria UNO Corporation',
@@ -43,6 +53,18 @@ export default function Experience() {
       image: '/assets/svg/experience/react.svg',
       url: 'https://reactjs.org/',
       type: 'framework',
+    },
+    {
+      name: 'Vue',
+      image: '/assets/svg/experience/vue.svg',
+      url: 'https://vuejs.org/',
+      type: 'framework',
+    },
+    {
+      name: 'AWS',
+      image: '/assets/svg/experience/aws.svg',
+      url: 'https://aws.amazon.com/',
+      type: 'backend',
     },
     {
       name: 'Laravel',
@@ -191,7 +213,6 @@ export default function Experience() {
     const technologies = document.querySelectorAll(
       "[data-content='technology']"
     );
-    console.log(trigger);
     trigger.addEventListener('click', () => {
       trigger.style.display = 'none';
       technologies.forEach((technology) => {
@@ -208,12 +229,6 @@ export default function Experience() {
   return (
     <section id="experience" className={styles.experience}>
       <h3>Experience:</h3>
-
-      {/* <div className={styles.experience__nav}>
-        {technologiesTypes.map((type, key) => {
-          return <p key={key}>{type}</p>;
-        })}
-      </div> */}
 
       <div className={styles.container}>
         <div className={styles.experience__companies}>
@@ -236,6 +251,9 @@ export default function Experience() {
                         {item.years} {years}
                       </span>
                     </h5>
+                    <br />
+                    <h6>{item.title}</h6>
+                    <br />
                   </div>
                   <div className={styles.experience__companies__content}>
                     <p>{item.duties}</p>
@@ -257,7 +275,8 @@ export default function Experience() {
         <div className={styles.experience__tech}>
           <br />
           <br />
-          <h4>Tech</h4>
+          <br />
+          <h4>Tech:</h4>
           <ul className={styles.experience__tech__container}>
             {technologies.map((item, index) => {
               const display = index > 9 ? styles.hidden : '';

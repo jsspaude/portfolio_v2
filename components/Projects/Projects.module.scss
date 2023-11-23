@@ -38,6 +38,12 @@ section.projects {
       padding: 2rem 1.5rem 0px 1.5rem;
       margin-top: 40px;
 
+      &:hover {
+        transform: scale(0.9);
+      }
+      transition: transform 500ms ease;
+      cursor: pointer;
+
       @media #{$desk} {
         width: 75%;
         margin-left: auto;
@@ -90,7 +96,7 @@ section.projects {
     }
 
     &__img {
-      width: 75%;
+      width: 95%;
       margin: 25px 0;
       transition: width 500ms ease;
 

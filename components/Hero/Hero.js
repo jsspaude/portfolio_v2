@@ -14,7 +14,7 @@ export default function Hero() {
       <div className={`${styles.experience} ${styles.subsection}`}>
         <p>I have experience with:</p>
         <p>
-          • Next.js • React • Wordpress • PHP • MySql • Cloud Computing •
+          • Next.js • Vue • React • Wordpress • PHP • MySql • Cloud Computing •
           Digital Ocean • DevOps
         </p>
 

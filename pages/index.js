@@ -14,8 +14,8 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          Jess Spaude ← Web Developer at Colony Digital, • Next.js • React •
-          Wordpress • PHP • MySql • Cloud Computing • Digital Ocean • DevOps
+          Jess Spaude ← Web Developer at Colony Digital, • Next.js • Vue • React
+          • Wordpress • PHP • MySql • Cloud Computing • Digital Ocean • DevOps
         </title>
         <meta
           name="description"

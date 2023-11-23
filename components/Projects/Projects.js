@@ -1,15 +1,51 @@
 import styles from './Projects.module.scss';
 import { useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Projects() {
   const projects = [
+    {
+      title: 'bowerhouse.ca',
+      content:
+        'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
+      url: 'https://bowerhouse.ca',
+      domain: 'bowerhousecom',
+      img: 'bowerhouse.jpg',
+      company: 'bowerhouse',
+    },
+    {
+      title: 'Indigineous Sport Gallery',
+      content:
+        'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
+      url: 'https://indigenoussportgallery.com',
+      domain: 'indigenoussportgallery.com',
+      img: 'indigenoussportgallery.jpg',
+      company: 'bowerhouse',
+    },
+    {
+      title: 'Timber House by Aragon',
+      content:
+        'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
+      url: 'https://timberhousebyaragon.ca',
+      domain: 'timberhousebyaragon.ca',
+      img: 'timberhousebyaragon.jpg',
+      company: 'bowerhouse',
+    },
+    {
+      title: 'Moxies',
+      content: 'Vue front-end coupled with \n prismic cms. - AWS',
+      url: 'https://moxies.com',
+      domain: 'moxies.com',
+      img: 'moxies.jpg',
+      company: 'bowerhouse',
+    },
     {
       title: 'Aragon',
       content:
         'Fully custom wordpress theme and cms. \n LAMP Stack - Digital Ocean',
       url: 'https://aragon.ca',
       domain: 'Aragon.ca',
-      img: 'aragon.png',
+      img: 'aragon.jpg',
       company: 'Colony Digital',
     },
     {
@@ -18,7 +54,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://tagwhistler.com',
       domain: 'TagWhistler.com',
-      img: 'tagwhistler.png',
+      img: 'tagwhistler.jpg',
       company: 'Colony Digital',
     },
     {
@@ -27,7 +63,7 @@ export default function Projects() {
         'Maintenance, updates, and server management for all projects \n Next.js - Wordpress - Digital Ocean - Media Temple',
       url: 'https://westbankcorp.com',
       domain: 'Westbankcorp.com',
-      img: 'westbank.png',
+      img: 'westbank.jpg',
       company: 'Colony Digital',
     },
     {
@@ -35,7 +71,7 @@ export default function Projects() {
       content: 'Progressive web app and database  \n React - Firebase - Vercel',
       url: 'https://sweatalus-mock-draft.netlify.app/',
       domain: 'Sweatalus Mock Draft',
-      img: 'sweatalus.png',
+      img: 'sweatalus.jpg',
       company: 'jspaude.ca',
     },
     {
@@ -44,7 +80,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://marinelanding.ca',
       domain: 'MarineLanding.ca',
-      img: 'marinelanding.png',
+      img: 'marinelanding.jpg',
       company: 'Colony Digital',
     },
     {
@@ -53,7 +89,7 @@ export default function Projects() {
         'Updating and maintaing legacy code stack that uses a hybrid of laravel, react, and craft cms',
       url: 'https://joeyrestaurants.com',
       domain: 'JOEYRestaurants.ca',
-      img: 'joeyrestaurants.png',
+      img: 'joeyrestaurants.jpg',
       company: 'Colony Digital',
     },
     {
@@ -61,7 +97,7 @@ export default function Projects() {
       content: 'A Next.js project \n React - Next.js - Digital Ocean',
       url: 'https://jspaude.ca/',
       domain: 'jspaude.ca',
-      img: 'jspaude.png',
+      img: 'jspaude.jpg',
       company: 'jspaude.ca',
     },
     {
@@ -70,7 +106,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://homeinbc.ca',
       domain: 'HomeInBC.ca',
-      img: 'homeinbc.png',
+      img: 'homeinbc.jpg',
       company: 'Colony Digital',
     },
     {
@@ -79,7 +115,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://fishrite.ca',
       domain: 'FishRite.ca',
-      img: 'fishrite.png',
+      img: 'fishrite.jpg',
       company: 'Colony Digital',
     },
     {
@@ -88,7 +124,7 @@ export default function Projects() {
         'Full site build using Elementor and the Salient WordPress theme',
       url: 'https://movehelpers.ca',
       domain: 'MoveHelpers.ca',
-      img: 'movehelpers.png',
+      img: 'movehelpers.jpg',
       company: 'Vancouver Websites',
     },
   ];
@@ -119,29 +155,35 @@ export default function Projects() {
           {projects.map((item, index) => {
             const display = index > 2 ? styles.hidden : '';
             return (
-              <li
-                className={`${styles.projects__item} ${display}`}
-                key={`project-${index}`}
-                data-content="project"
+              <Link
+                href={`${item.url}`}
+                target="_blank"
+                className="projects__link"
               >
-                <div className={styles.projects__title}>
-                  <h4>{item.title}</h4>
-                </div>
-                <div className={styles.projects__img}>
-                  <img src={`/assets/images/projects/${item.img}`} />
-                </div>
-                <div className={styles.projects__content}>
-                  <p>{item.content}</p>
-                  <p className={styles.company}>A {item.company} project</p>
-                  <a
-                    href={`${item.url}`}
-                    target="_blank"
-                    className="projects__link"
-                  >
-                    {item.domain} &rarr;
-                  </a>
-                </div>
-              </li>
+                <li
+                  className={`${styles.projects__item} ${display}`}
+                  key={`project-${index}`}
+                  data-content="project"
+                >
+                  <div className={styles.projects__title}>
+                    <h4>{item.title}</h4>
+                  </div>
+                  <div className={styles.projects__img}>
+                    <img src={`/assets/images/projects/${item.img}`} />
+                  </div>
+                  <div className={styles.projects__content}>
+                    <p>{item.content}</p>
+                    <p className={styles.company}>A {item.company} project</p>
+                    <a
+                      href={`${item.url}`}
+                      target="_blank"
+                      className="projects__link"
+                    >
+                      {item.domain} &rarr;
+                    </a>
+                  </div>
+                </li>
+              </Link>
             );
           })}
         </ul>
