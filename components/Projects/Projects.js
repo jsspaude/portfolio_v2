@@ -5,15 +5,6 @@ import Image from 'next/image';
 export default function Projects() {
   const projects = [
     {
-      title: 'bowerhouse.ca',
-      content:
-        'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
-      url: 'https://bowerhouse.ca',
-      domain: 'bowerhouse.ca',
-      img: 'bowerhouse.jpg',
-      company: 'bowerhouse',
-    },
-    {
       title: 'Indigineous Sport Gallery',
       content:
         'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
@@ -23,20 +14,12 @@ export default function Projects() {
       company: 'bowerhouse',
     },
     {
-      title: 'Timber House by Aragon',
+      title: 'bowerhouse.ca',
       content:
         'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
-      url: 'https://timberhousebyaragon.ca',
-      domain: 'timberhousebyaragon.ca',
-      img: 'timberhousebyaragon.jpg',
-      company: 'bowerhouse',
-    },
-    {
-      title: 'Moxies',
-      content: 'Vue front-end coupled with \n prismic cms. - AWS',
-      url: 'https://moxies.com',
-      domain: 'moxies.com',
-      img: 'moxies.jpg',
+      url: 'https://bowerhouse.ca',
+      domain: 'bowerhouse.ca',
+      img: 'bowerhouse.jpg',
       company: 'bowerhouse',
     },
     {
@@ -47,6 +30,15 @@ export default function Projects() {
       domain: 'Aragon.ca',
       img: 'aragon.jpg',
       company: 'Colony Digital',
+    },
+    {
+      title: 'Timber House by Aragon',
+      content:
+        'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
+      url: 'https://timberhousebyaragon.ca',
+      domain: 'timberhousebyaragon.ca',
+      img: 'timberhousebyaragon.jpg',
+      company: 'bowerhouse',
     },
     {
       title: 'TAG Whistler',
@@ -169,8 +161,8 @@ export default function Projects() {
                   </div>
                   <div className={styles.projects__img}>
                     <Image
-                      width="100%"
-                      height="100%"
+                      layout="fill"
+                      objectFit="contain"
                       src={`/assets/images/projects/${item.img}`}
                     />
                   </div>
