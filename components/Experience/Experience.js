@@ -6,7 +6,7 @@ export default function Experience() {
   const companies = [
     {
       name: 'bowerhouse',
-      years: 1,
+      years: 2,
       title: 'Fullstack Operations Developer',
       duties:
         'In charge of full stack development for our clients. \n • Built and managed full scale experiences using a wordpress LEMP stack or next.js. \n • Built and managed cloud servers. \n • Built and managed internal development documentation. \n • On boarded and mentored newer developers and project managers. \n • Managed and maintained internal and external servers. \n • Liase with clients and partners to provide technical support and quotes.',
@@ -15,7 +15,7 @@ export default function Experience() {
     },
     {
       name: 'ColonyDigital',
-      years: 3,
+      years: 4,
       title: 'Web Developer',
       duties:
         'In charge of full stack development for our clients. \n • Built and managed full scale experiences using a wordpress LEMP stack or next.js. \n • Built and managed cloud servers. \n • Built and managed internal development documentation. \n • On boarded and mentored newer developers and project managers. \n • Managed and maintained internal and external servers. \n • Liase with clients and partners to provide technical support and quotes.',
