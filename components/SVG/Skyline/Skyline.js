@@ -1,7 +1,17 @@
 import styles from './Skyline.module.scss';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
 
 const Skyline = () => {
+  useEffect(() => {
+    // Initial fade-in animation
+    gsap.fromTo(
+      '#skyline path',
+      { opacity: 0, scale: 0.8, transformOrigin: 'center' },
+      { opacity: 1, scale: 1, duration: 2, stagger: 0.1 }
+    );
+  }, []);
+
   return (
     <div className="skyline">
       <svg
@@ -268,4 +278,5 @@ const Skyline = () => {
     </div>
   );
 };
+
 export default Skyline;

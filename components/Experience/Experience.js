@@ -5,6 +5,15 @@ import Image from 'next/image';
 export default function Experience() {
   const companies = [
     {
+      name: 'The One Group Agency',
+      years: 1,
+      title: 'Fullstack Operations Developer',
+      duties:
+        'In charge of full stack development for our clients. \n • Built and managed full scale experiences using a wordpress LEMP stack or next.js. \n • Built and managed cloud servers. \n • Built and managed internal development documentation. \n • On boarded and mentored newer developers and project managers. \n • Managed and maintained internal and external servers. \n • Liase with clients and partners to provide technical support and quotes. \n • IT and Email management.',
+      url: 'https://theog.co',
+      domain: 'theog.co',
+    },
+    {
       name: 'bowerhouse',
       years: 2,
       title: 'Fullstack Operations Developer',
@@ -30,21 +39,6 @@ export default function Experience() {
         'In charge of building and maintaining experiences using wordpress and the visual composer plugin.',
       url: 'https://vancouverwebsites.ca/',
       domain: 'VancouverWebsites.ca',
-    },
-    {
-      name: 'BCIT',
-      years: 2,
-      title: 'Student',
-      duties: 'Graduate of the New Media and Web Development intensive program',
-      url: 'https://www.bcit.ca/programs/new-media-design-and-web-development-diploma-full-time-6525dipma/',
-      domain: 'BCIT - New Media Design and Web Development',
-    },
-    {
-      name: 'Hospitality Managment',
-      title: 'Manger/General Manager',
-      years: 12,
-      duties:
-        'Management experience and training in companies such as: Hotel Le Germain, Wentworth Hospitality, Hoppy Inc, Pizzeria UNO Corporation',
     },
   ];
 

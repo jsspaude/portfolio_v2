@@ -1,20 +1,31 @@
 @import '../../styles/variables';
 
 section.hero {
-  min-height: calc(100vh - 90px);
+  min-height: 100vh;
   position: relative;
-  margin-top: 90px;
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 
   @media #{$desk} {
-    margin-top: 50px;
+    padding-top: 90px;
+  }
+
+  .main_container {
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 80%;
+
+    @media #{$desk} {
+      width: 50%;
+      padding: 1rem;
+    }
   }
 
   .subsection {
-    flex: 1;
-
     p,
     a {
       padding: 0.5rem 0;
@@ -33,6 +44,7 @@ section.hero {
     h3 {
       text-align: left;
       color: #e85a4f;
+      text-transform: uppercase;
     }
 
     img {
@@ -96,23 +108,20 @@ section.hero {
         }
       }
     }
+  }
 
-    &__image {
-      flex: 1;
+  .image {
+    opacity: 0.8;
+    position: relative;
+    width: 100%;
 
-      @media #{$desk} {
-        svg {
-          float: right;
-          width: 300px;
-          max-height: 100px;
-        }
-      }
-    }
+    right: 0;
 
-    im {
-      width: 50px;
-      height: 50px;
-      margin-right: 20px;
+    @media #{$desk} {
+      position: absolute;
+      height: 390px;
+      width: 75%;
+      top: 190px;
     }
   }
 

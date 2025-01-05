@@ -5,6 +5,15 @@ import Image from 'next/image';
 export default function Projects() {
   const projects = [
     {
+      title: 'The One Group Agency',
+      content:
+        'Fully custom wordpress theme and cms. \n LAMP Stack - Digital Ocean',
+      url: 'https://theog.co',
+      domain: 'theog.co',
+      img: 'theog.co.png',
+      company: 'The One Group Agency',
+    },
+    {
       title: 'Indigineous Sport Gallery',
       content:
         'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
@@ -47,6 +56,15 @@ export default function Projects() {
       url: 'https://tagwhistler.com',
       domain: 'TagWhistler.com',
       img: 'tagwhistler.jpg',
+      company: 'Colony Digital',
+    },
+    {
+      title: 'Platinum ProClaim Restoration',
+      content:
+        'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
+      url: 'https://ppcr.ca',
+      domain: 'ppcr.ca',
+      img: 'ppcr.ca.png',
       company: 'Colony Digital',
     },
     {
@@ -144,7 +162,7 @@ export default function Projects() {
       <div className={styles.container}>
         <ul className={styles.projects__container}>
           {projects.map((item, index) => {
-            const display = index > 2 ? styles.hidden : '';
+            const display = index > 3 ? styles.hidden : '';
             return (
               <li
                 className={`${styles.projects__item} ${display}`}

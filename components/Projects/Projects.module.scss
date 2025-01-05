@@ -25,7 +25,13 @@ section.projects {
   ul {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    display: block;
+
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+
+    @media #{$desk} {
+      display: grid;
+    }
 
     li {
       list-style-type: none;
@@ -46,7 +52,7 @@ section.projects {
       }
 
       @media #{$desk} {
-        width: 75%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
       }
@@ -143,6 +149,7 @@ section.projects {
         height: 0;
         margin: 0 !important;
         padding: 0 !important;
+        margin: -50px;
       }
     }
   }
