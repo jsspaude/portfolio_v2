@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
         <div className={styles.footer__copyright}>
           <p>
-            Copyright © <a href="https://jspaude.ca">jspaude.ca</a> 2024
+            Copyright © <a href="https://jspaude.ca">jspaude.ca</a> 2025
           </p>
         </div>
       </div>

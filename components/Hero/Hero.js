@@ -8,7 +8,7 @@ export default function Hero() {
       <div className={styles.main_container}>
         <div className={`${styles.intro} ${styles.subsection}`}>
           <div className={styles.text}>
-            <h3>jspaude web development</h3>
+            <h3>JSPAUDE.CA {<br />} - Full Stack Web Services</h3>
             <p>Vanocuver based frontend, backend, and hosting needs</p>
           </div>
         </div>

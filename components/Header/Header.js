@@ -5,7 +5,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.top}>
         <h2>jspaude.ca</h2>
-        <p>Full Stack Web Development</p>
+        <p>Full Stack Web Services</p>
       </div>
     </header>
   );
