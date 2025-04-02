@@ -10,7 +10,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LAMP Stack - Digital Ocean',
       url: 'https://tastybistro.ca',
       domain: 'tastybistro.ca',
-      img: 'tastybistro.png',
+      img: 'tastybistro.webp',
       company: 'The One Group Agency',
     },
     {
@@ -19,7 +19,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LAMP Stack - Digital Ocean',
       url: 'https://theog.co',
       domain: 'theog.co',
-      img: 'theog.co.png',
+      img: 'theog.co.webp',
       company: 'The One Group Agency',
     },
     {
@@ -28,7 +28,7 @@ export default function Projects() {
         'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
       url: 'https://indigenoussportgallery.com',
       domain: 'indigenoussportgallery.com',
-      img: 'indigenoussportgallery.jpg',
+      img: 'indigenoussportgallery.webp',
       company: 'bowerhouse',
     },
     {
@@ -37,7 +37,7 @@ export default function Projects() {
         'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
       url: 'https://bowerhouse.ca',
       domain: 'bowerhouse.ca',
-      img: 'bowerhouse.jpg',
+      img: 'bowerhouse.webp',
       company: 'bowerhouse',
     },
     {
@@ -46,7 +46,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LAMP Stack - Digital Ocean',
       url: 'https://aragon.ca',
       domain: 'Aragon.ca',
-      img: 'aragon.jpg',
+      img: 'aragon.webp',
       company: 'Colony Digital',
     },
     {
@@ -55,7 +55,7 @@ export default function Projects() {
         'Next.js front-end coupled with \n a headless WordPress cms. - Digital Ocean',
       url: 'https://timberhousebyaragon.ca',
       domain: 'timberhousebyaragon.ca',
-      img: 'timberhousebyaragon.jpg',
+      img: 'timberhousebyaragon.webp',
       company: 'bowerhouse',
     },
     {
@@ -64,7 +64,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://tagwhistler.com',
       domain: 'TagWhistler.com',
-      img: 'tagwhistler.jpg',
+      img: 'tagwhistler.webp',
       company: 'Colony Digital',
     },
     {
@@ -73,7 +73,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://ppcr.ca',
       domain: 'ppcr.ca',
-      img: 'ppcr.ca.png',
+      img: 'ppcr.ca.webp',
       company: 'Colony Digital',
     },
     {
@@ -82,7 +82,7 @@ export default function Projects() {
         'Maintenance, updates, and server management for all projects \n Next.js - Wordpress - Digital Ocean - Media Temple',
       url: 'https://westbankcorp.com',
       domain: 'Westbankcorp.com',
-      img: 'westbank.jpg',
+      img: 'westbank.webp',
       company: 'Colony Digital',
     },
     {
@@ -91,7 +91,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://marinelanding.ca',
       domain: 'MarineLanding.ca',
-      img: 'marinelanding.jpg',
+      img: 'marinelanding.webp',
       company: 'Colony Digital',
     },
     {
@@ -100,7 +100,7 @@ export default function Projects() {
         'Updating and maintaing legacy code stack that uses a hybrid of laravel, react, and craft cms',
       url: 'https://joeyrestaurants.com',
       domain: 'JOEYRestaurants.ca',
-      img: 'joeyrestaurants.jpg',
+      img: 'joeyrestaurants.webp',
       company: 'Colony Digital',
     },
     {
@@ -108,7 +108,7 @@ export default function Projects() {
       content: 'A Next.js project \n React - Next.js - Digital Ocean',
       url: 'https://jspaude.ca/',
       domain: 'jspaude.ca',
-      img: 'jspaude.jpg',
+      img: 'jspaude.webp',
       company: 'jspaude.ca',
     },
     {
@@ -117,7 +117,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://homeinbc.ca',
       domain: 'HomeInBC.ca',
-      img: 'homeinbc.jpg',
+      img: 'homeinbc.webp',
       company: 'Colony Digital',
     },
     {
@@ -126,7 +126,7 @@ export default function Projects() {
         'Fully custom wordpress theme and cms. \n LEMP Stack - Digital Ocean',
       url: 'https://fishrite.ca',
       domain: 'FishRite.ca',
-      img: 'fishrite.jpg',
+      img: 'fishrite.webp',
       company: 'Colony Digital',
     },
     {
@@ -135,7 +135,7 @@ export default function Projects() {
         'Full site build using Elementor and the Salient WordPress theme',
       url: 'https://movehelpers.ca',
       domain: 'MoveHelpers.ca',
-      img: 'movehelpers.jpg',
+      img: 'movehelpers.webp',
       company: 'Vancouver Websites',
     },
   ];
