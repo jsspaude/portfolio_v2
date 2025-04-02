@@ -5,6 +5,15 @@ import Image from 'next/image';
 export default function Projects() {
   const projects = [
     {
+      title: 'Tasty Indian Bistro',
+      content:
+        'Fully custom wordpress theme and cms. \n LAMP Stack - Digital Ocean',
+      url: 'https://tastybistro.ca',
+      domain: 'tastybistro.ca',
+      img: 'tastybistro.png',
+      company: 'The One Group Agency',
+    },
+    {
       title: 'The One Group Agency',
       content:
         'Fully custom wordpress theme and cms. \n LAMP Stack - Digital Ocean',
@@ -75,14 +84,6 @@ export default function Projects() {
       domain: 'Westbankcorp.com',
       img: 'westbank.jpg',
       company: 'Colony Digital',
-    },
-    {
-      title: 'Sweatalus Mock Draft',
-      content: 'Progressive web app and database  \n React - Firebase - Vercel',
-      url: 'https://sweatalus-mock-draft.netlify.app/',
-      domain: 'Sweatalus Mock Draft',
-      img: 'sweatalus.jpg',
-      company: 'jspaude.ca',
     },
     {
       title: 'Marine Landing',
