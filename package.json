@@ -8,7 +8,7 @@
     "start": "next start",
     "build": "npm run clean && next build",
     "dp:prod": "git push origin main && npm run rb:prod",
-    "rb:prod": "ssh -t root@143.198.46.170 \"cd /var/www/jspaude_ca/ && git pull origin main && npm run rs:prod\"",
+    "rb:prod": "ssh -t root@143.198.46.170 \"cd /var/www/jspaude_ca/ && git pull origin main && npm run build && rs:prod\"",
     "rs:prod": "pm2 restart jspaude"
   },
   "dependencies": {
